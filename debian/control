@@ -1,0 +1,28 @@
+Source: golang-github-mitchellh-mapstructure
+Maintainer: Louis Royer <louis.royer@irit.fr>
+Uploaders: Louis Royer <louis.royer@irit.fr>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.5.0
+Vcs-Browser: https://github.com/louisroyer-deb/golang-github-mitchellh-mapstructure
+Vcs-Git: https://github.com/louisroyer-deb/golang-github-mitchellh-mapstructure.git
+Homepage: https://github.com/mitchellh/mapstructure
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/mitchellh/mapstructure
+
+Package: golang-github-mitchellh-mapstructure-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: Go library for decoding generic map values into native Go structures and vice versa. (library)
+ mapstructure is a Go library for decoding generic map values to structures
+ and vice versa, while providing helpful error handling.
+ .
+ This library is most useful when decoding values from some data stream
+ (JSON, Gob, etc.) where you don't quite know the structure of the
+ underlying data until you read a part of it. You can therefore read a
+ map[string]interface{} and use this library to decode it into the proper
+ underlying native Go structure.  Installation Standard go get:

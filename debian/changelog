@@ -1,0 +1,5 @@
+golang-github-mitchellh-mapstructure (1.4.3-1) bullseye; urgency=medium
+
+  * Initial release
+
+ -- Louis Royer <louis.royer@irit.fr>  Wed, 30 Mar 2022 13:41:30 +0200
